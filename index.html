@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-analytics.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+   <center>
+    <div class="container ">
+        <h1 style="margin-bottom: 2em;"> مقولات من ذهب </h1> 
+        <div class="shadow card"> 
+            <div ><b id="qoute"></b></div>
+            <div id="author"></div>
+            <div id="desc"></div>
+            <button id="btn-new" class="button button1" ><b>مقولة جديدة</b></button>
+        </div>
+    </div>
+</center>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCXWdRrGrzI8-E7vbfmGnLz7ZF98aAWO-Q",
+    authDomain: "saysofgold.firebaseapp.com",
+    databaseURL: "https://saysofgold.firebaseio.com",
+    projectId: "saysofgold",
+    storageBucket: "saysofgold.appspot.com",
+    messagingSenderId: "370581166425",
+    appId: "1:370581166425:web:fa5f2cbb7e24d7ec185448",
+    measurementId: "G-LRQSXCTLPJ"
+  };
+  // Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+   firebase.analytics();
+   const  db = firebase.firestore();
+</script>
+<script src="app.js"></script>
+</body>
+
+</html>
